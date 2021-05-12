@@ -1,0 +1,19 @@
+<div id="TeamDiv" *ngIf = "!selectedTeam">
+    <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Team</th>
+                <th>Logo</th>
+            </tr>
+    
+            <tr *ngFor="let team of teams" (click)="onSelect(team)">
+                <td>{{team.id}}</td>
+                <td>{{team.name}}</td>
+                <td><img src="https://squiggle.com.au/{{team.logo}}" style="height:60px;font-size:60px;"></td>
+            </tr>
+        </table>
+
+
+</div>
+
+    <app-team-result [team]="selectedTeam"></app-team-result>

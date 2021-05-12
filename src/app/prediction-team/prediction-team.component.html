@@ -1,0 +1,25 @@
+<div id="TeamDiv" >
+    <br>
+    <br>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below is the AFL Rank Teams List</h3>
+    <br>
+    <p>“As a fan, I want to see the AFL rank team list”</p>
+    <br>
+
+        <table class="table table-striped">
+                <tr>
+                    <th>Rank Number</th>
+                    <th>Team Name</th>
+                    <th>Number of games wons</th>
+                </tr>
+        
+                <tr *ngFor="let team of theStandings">
+                    <td>{{team.rank}}</td>
+                    <td></td>
+                    <td>{{team.name}}</td>
+                    <td>{{team.wins}}--{{team.played}}</td>
+                </tr>
+            </table>
+    
+    
+    </div>

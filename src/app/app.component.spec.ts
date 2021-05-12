@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'DataApp'`, () => {
+  it(`should have as title 'AFL sport au'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('DataApp');
+    expect(app.title).toEqual('AFL sport au');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('DataApp app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('AFL sport au app is running!');
   });
 });
